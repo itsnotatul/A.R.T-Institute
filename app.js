@@ -7,15 +7,15 @@ var express       = require("express"),
 	flash         = require("connect-flash"),
 	LocalStrategy = require("passport-local"),
 	methodOverride= require("method-override"),
-	Campground    = require("./models/campground"),
-	Comment       = require("./models/comment"),
-	User          = require("./models/user"),
-	seedDB        = require("./seeds");
+	//Campground    = require("./models/campground"),
+	//Comment       = require("./models/comment"),
+	User          = require("./models/user");
+	//seedDB        = require("./seeds");
 	
 
 //requiring routes
-var commentRoutes    = require("./routes/comments"),
-	campgroundRoutes = require("./routes/campgrounds"),
+var //commentRoutes    = require("./routes/comments"),
+	//campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes      = require("./routes/index");
 
 var url = process.env.DATABASEURL ||  "mongodb://localhost/yelp_camp_v5_final"
@@ -68,8 +68,8 @@ app.use(function(req,res,next){
 })
 
 
-app.use(commentRoutes);
-app.use(campgroundRoutes);
+//app.use(commentRoutes);
+//app.use(campgroundRoutes);
 app.use(indexRoutes);
 
 
