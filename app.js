@@ -10,23 +10,30 @@ var express       = require("express"),
 	//Campground    = require("./models/campground"),
 	//Comment       = require("./models/comment"),
 	User          = require("./models/user");
-	//seedDB        = require("./seeds");
-	
+
+
+const { google } = require('googleapis');
+
+const OAuth2Data = require('./google_key.json')
 
 //requiring routes
-var //commentRoutes    = require("./routes/comments"),
-	//campgroundRoutes = require("./routes/campgrounds"),
-	indexRoutes      = require("./routes/index");
+ //commentRoutes    = require("./routes/comments"),
+ var exploreRoutes    = require("./routes/explore"),
+	 indexRoutes      = require("./routes/index");
 
-var url = process.env.DATABASEURL ||  "mongodb://localhost/yelp_camp_v5_final"
-mongoose.connect(url,{
+// var url = process.env.DATABASEURL ||  "mongodb://localhost/artutorials"
+// mongoose.connect(url,{
+// 	useNewUrlParser:true,
+// 	useCreateIndex:true
+// });
+
+mongoose.connect("mongodb://localhost/artutorials",{
 	useNewUrlParser:true,
 	useCreateIndex:true
 });
 
 
 
-//seedDB(); // seeds th db
 
 //mongoose updates - removes errors
 mongoose.set('useNewUrlParser', true);
@@ -65,15 +72,18 @@ app.use(function(req,res,next){
 	
 	next(); // as it is a middleware on every route.
 	// all it does is ,that is passes req.user as variable currentUser on every route
-})
+});
 
 
 //app.use(commentRoutes);
-//app.use(campgroundRoutes);
+app.use(exploreRoutes);
 app.use(indexRoutes);
 
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`A.R. tutorials server is listening now on ${ PORT }`);
+// });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`YelpCamp server is listening now on ${ PORT }`);
-});
+app.listen(3000,function(){
+	console.log("A.R. tutorials server is listening now.")
+})
