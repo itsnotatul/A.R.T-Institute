@@ -12,14 +12,12 @@ var express       = require("express"),
 	User          = require("./models/user");
 
 
-const { google } = require('googleapis');
-
-const OAuth2Data = require('./google_key.json')
 
 //requiring routes
  //commentRoutes    = require("./routes/comments"),
  var exploreRoutes    = require("./routes/explore"),
-	 indexRoutes      = require("./routes/index");
+	 indexRoutes      = require("./routes/index"),
+	 notesRoutes      = require("./routes/notes");
 
 // var url = process.env.DATABASEURL ||  "mongodb://localhost/artutorials"
 // mongoose.connect(url,{
@@ -78,6 +76,7 @@ app.use(function(req,res,next){
 //app.use(commentRoutes);
 app.use(exploreRoutes);
 app.use(indexRoutes);
+app.use(notesRoutes);
 
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => {

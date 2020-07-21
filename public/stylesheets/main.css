@@ -10,6 +10,32 @@
 	padding : 9px;
 }
 
+body{
+	background-color: rgb(240,248,255);
+	
+}
+.jumbo{
+	background-color: white;
+}
+.course{
+	background-color: white;
+}
+.location{
+	background-color: white;
+}
+
+.founder{
+	background-color: white;
+}
+.online{
+	background-color: white;
+}
+.notes{
+	background-color: white;
+}
+.second{
+	margin-left: 80px;
+}
 #form-delete{
 	display:inline;
 }
