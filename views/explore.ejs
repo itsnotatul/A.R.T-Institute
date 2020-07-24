@@ -1,90 +1,165 @@
 <%- include("./partials/header") %> <!-- didn't use .. coz this file n partials r in same directory i.e views -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div class ="container">
 	<header class="jumbotron jumbo">
 			<div class="container">
-				<h1><span class="glyphicon glyphicon-tent"></span>  Welcome to A.R.Tutorials</h1>
-				<p>"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less." 
-				― Marie Curie
-				<!-- </div>  -->
-				</p>
-				<!-- <p> -->
-				<!-- <a class= "btn btn-primary btn-large" href ="/campgrounds/new">Add new  Campground</a>
-				</p> -->
-			
+				<h1><i class="fa fa-coffee" aria-hidden="true"></i> Welcome to A.R.Tutorials</h1>
+				
+			<blockquote class="quote-card">
+              <p>
+               "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less." 
+              </p>
+        
+              <cite>
+               ― Marie Curie
+              </cite>
+            </blockquote>
     
 			</div>
 		
 		</header>
 	
 	<!-- courses offered -->
-	<div class="well course">
-  <h1>Courses Offered!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button"style="margin-left:450px">Learn more</a></p>
+<div class="card my-3 ">
+	<div class="container my-3">
+		<h1 class="text-left">About Us</h1>
+	  <p>
+		
+Since its inception in 1988, A.R. Tutorials has been providing quality education to its students for their glorious and enlightened future.
+		</p>
+		<div>
+			<p>
+				Courses offered by us are as followed:
+			</p>
+			<ul class="list-group">
+			  <li class="list-group-item list-group-item-primary">MATHEMATICS(IX-XII)</li>
+			  <li class="list-group-item list-group-item-secondary">SCIENCE(IX-X)</li>
+			  <li class="list-group-item list-group-item-success">ENGLISH(IX-XII)</li>
+			  <li class="list-group-item list-group-item-danger">CHEMISTRY(IX-XII)</li>
+			  <li class="list-group-item list-group-item-warning">ECONOMICS(XI-XII)</li>
+			  <li class="list-group-item list-group-item-info">ACCOUNTS(XI-XII)</li>
+			  <li class="list-group-item list-group-item-light">B.STUDIES(XI-XII)</li>
+				<li class="list-group-item list-group-item-danger">HUMANITIES (ALL SUBJECTS)</li>
+			  <li class="list-group-item list-group-item-dark">ALL SUBJECTS(VI-VIII)</li>
+			</ul>
+		</div> 
 </div>
+	</div>	
+  
 	
 	<!-- online classes -->
-	<div class= "well online">
-		<h1>
-			how to take online class 
-		</h1>
-		<embed type="application/pdf" src="A.R.T ONLINE CLASSES.pdf" height="620px" width="100%"/>
-	</div>
+	<div class= "card my-3 ">
+		<div class="container my-3">
+			<h1 class="text-center">
+				COVID-19 ?
+			</h1>
+			<p>
+				We take immense pride in providing 100% results since 1998 and shall continue to do so in the wake of coronavirus pandemic through online classes via zoom and meet.
+				<br>
+				if you want to know how to attend class online, then click on the pdf below to see the instructions.
+			</p>
+			<embed type="application/pdf" src="A.R.T ONLINE CLASSES.pdf" height="450px" width="100%"/>
+		</div>
+	</div>	
 	
 	<!-- notes -->
 	
-	<div class= "well notes">
-		<h1>
-			we give notes after every class . sample the free notes below .
-		</h1>
-		
-		<a class= "btn btn-primary btn-lg" href ="/notes" style="margin-left:450px">NOTES</a>
-		
+	<div class="card my-3 ">
+		<div class="container my-3">
+			<h1>
+				Online Notes! 
+				
+			</h1>
+			<p>
+			  We all know how bad the internet connecion acts when you need it the most. Well, don't worry we got you covered, we send pdf of the notes after every class so that you don't get left behind. Access some of the free sample notes we provide after every class.
+		    </p>
+			<div class="col text-center">
+		<a href="/notes" class="btn btn-info btn-sm m-2 text-center" role="button">Notes!</a>
+		</div>
+		</div>
 	</div>
 	
 	
 	<!-- location -->
-	<div class="well location">
-  <h1>Address and contact Info!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button"style="margin-left:450px">Learn more</a></p>
-</div>
-
-
-<div class=" well founder">
-	 <h2 class="text-center">
-		<strong>Words From Founders :</strong> 
-	 </h2>
-   <div class="row">
-	  <div class="col-sm-6 col-md-4">
-		 <div class="thumbnail">
-		   <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" >
-		  <div class="caption">
-				<h3>Anil Tiwari</h3>
-				<p>I speak blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-			  <p><strong>Contact Info:</strong> 9810474627</p>
-				
-		  </div>
-		</div>
-       </div>
-		
-	   
-		   <div class="col-sm-6 col-md-4 " style="margin-left:350px;" >
-			<div class="thumbnail ">
-			   <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" >
-			 <div class="caption">
-				<h3>Rakesh Tiwari</h3>
-				<p>I speak blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-				 <p><strong>Contact Info:</strong> 9810474627</p>
-				
-			 </div>
+	<div class="card my-3 " >
+		<div class="container my-3">
+		  <h1 class="text-center">Address and Contact Info</h1>
+			
+			<div class="row justify-content-center mt-4 " >
+				 <div class="col-sm-3 bg-dark text-white">
+				   Office Address: 
+				 </div>
+				 <div class="col-sm-6 bg-info">
+				  IX/1092, New Post Office Road, Gandhi Nagar, Delhi-110031
+				 </div>
 			</div>
+			<div class="row justify-content-center mt-2 " >
+				 <div class="col-sm-3 bg-dark text-white">
+				   Residential Address: 
+				 </div>
+				 <div class="col-sm-6 bg-info">
+				  C-10/104,Sector-5, Near Anandhpur Satsang Dham, Rohini, Delhi-110085
+				 </div>
+			</div>
+			
+		<!-- now 2 cards of contact infos and social network connect  -->
+			
+				 
+			<div class="card-deck justify-content-around">
+			   <div class="card border-info m-5" style="max-width: 14rem; height= 70px">
+					  <div class="card-header">Contact Numbers:</div>
+					  <div class="card-body text-info">
+						<h5 class="card-title"> Mr. Anil Tiwari</h5>
+						<p class="card-text">9810474627</p>
+						 <h5 class="card-title"> Mr. Rakesh Tiwari</h5>
+						<p class="card-text">9818662731</p>
+					  </div>
+				</div>
+
+				 <div class="card border-success  m-5" style="max-width: 14rem; height= 70px">
+					  <div class="card-header">Social Media</div>
+					  <div class="card-body text-success ">
+						<h5 class="card-title"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</h5>
+						<p class="card-text"><a href = "mailto: arclasses@artutorialss.com"><i class="fa fa-arrow-right" aria-hidden="true"></i>  Send Email</a><br>arclasses@artutorialss.com</p>
+						 <h5 class="card-title"><i class="fa fa-facebook-f"></i>Facebook</h5>
+						<p class="card-text"><a href="https://www.facebook.com/artutorials01"><i class="fa fa-arrow-right" aria-hidden="true"></i> click</a> </p>
+					  </div>
+				  </div>
+				
+				</div>
+			
 		</div>
-	   
-	   
- </div>	
-		</div>
+	</div>
+
+
+	<!-- LETS TRY DECK CARD FROM BOOTSTRAP 4 -->
+<div class="card mb-3">
+	 <h3 class="display-3 text-center">Directors' Corner</h3>
+  <div class="card-deck justify-content-between">
+		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
+			<img class="card-img-top" src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap" >
+			<div class="card-body">
+			  <h5 class="card-title">Anil Tiwari</h5>
+			  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			</div>
+			<div class="card-footer">
+			  <small class=" font-weight-bold">Contact Info: 9810474627</small>
+			</div>
+	   </div>
+	  <!-- https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60 -->
+	   <div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
+			<img class="card-img-top" src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap" >
+			<div class="card-body">
+			  <h5 class="card-title">Rakesh Tiwari</h5>
+			  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			</div>
+			<div class="card-footer">
+			  <small class=" font-weight-bold">Contact Info: 9818662731</small>
+			</div>
+	  </div>
+    </div>
+</div>
 
 
  

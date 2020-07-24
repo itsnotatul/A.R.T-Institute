@@ -40,7 +40,12 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 
-
+//FLASH CONFIGURATION
+app.use(require("express-session")({
+	secret:"rusty is the best dog in the world",
+	resave: false,
+	saveUninitialized:false
+}));
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
