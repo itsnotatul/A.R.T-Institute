@@ -19,16 +19,16 @@ var express       = require("express"),
 	 indexRoutes      = require("./routes/index"),
 	 notesRoutes      = require("./routes/notes");
 
-// var url = process.env.DATABASEURL ||  "mongodb://localhost/artutorials"
-// mongoose.connect(url,{
-// 	useNewUrlParser:true,
-// 	useCreateIndex:true
-// });
-
-mongoose.connect("mongodb://localhost/artutorials",{
+var url = process.env.DATABASEURL ||  "mongodb://localhost/artutorials"
+mongoose.connect(url,{
 	useNewUrlParser:true,
 	useCreateIndex:true
 });
+
+// mongoose.connect("mongodb://localhost/artutorials",{
+// 	useNewUrlParser:true,
+// 	useCreateIndex:true
+// });
 
 
 
@@ -83,11 +83,11 @@ app.use(exploreRoutes);
 app.use(indexRoutes);
 app.use(notesRoutes);
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`A.R. tutorials server is listening now on ${ PORT }`);
-// });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`A.R. tutorials server is listening now on ${ PORT }`);
+});
 
-app.listen(3000,function(){
-	console.log("A.R. tutorials server is listening now.")
-})
+// app.listen(3000,function(){
+// 	console.log("A.R. tutorials server is listening now.")
+// })
