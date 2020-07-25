@@ -1,5 +1,4 @@
-//  npm i body-parser connect-flash ejs express express-session m
-// ethod-override mongoose passport passport-local passport-local-mongoose
+ // npm i body-parser connect-flash ejs express express-session method-override mongoose passport passport-local passport-local-mongoose
 
 	var express       = require("express"),
     app           = express(),
@@ -85,11 +84,11 @@ app.use(exploreRoutes);
 app.use(indexRoutes);
 app.use(notesRoutes);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`A.R. tutorials server is listening now on ${ PORT }`);
-});
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`A.R. tutorials server is listening now on ${ PORT }`);
+// });
 
-// app.listen(3000,function(){
-// 	console.log("A.R. tutorials server is listening now.")
-// })
+app.listen(3000,function(){
+	console.log("A.R. tutorials server is listening now.")
+})
