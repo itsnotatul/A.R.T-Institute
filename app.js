@@ -84,11 +84,11 @@ app.use(exploreRoutes);
 app.use(indexRoutes);
 app.use(notesRoutes);
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`A.R. tutorials server is listening now on ${ PORT }`);
-// });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`A.R. tutorials server is listening now on ${ PORT }`);
+});
 
-app.listen(3000,function(){
-	console.log("A.R. tutorials server is listening now.")
-})
+// app.listen(3000,function(){
+// 	console.log("A.R. tutorials server is listening now.")
+// })
