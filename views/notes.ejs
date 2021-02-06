@@ -1,67 +1,23 @@
 <!-- <embed type="application/pdf" src="A.R.T ONLINE CLASSES.pdf" height="620px" width="100%"/> -->
 
 <%- include("./partials/header") %> <!-- didn't use .. coz this file n partials r in same directory i.e views -->
+
+<link rel="stylesheet" href="/stylesheets/login.css">
+
 <!-- //BEFORE IFRAME , I JUST USED EMBEDD AND USE PDF NAMES FROM THE PUBLIC DIRE IN THE SRC -->
-<div class="container">
+
+<nav class="navbar fixed-top navbar-expand-lg ">
+        <a class="navbar-brand" href="/" style="font-family: 'Monoton', cursive; color: white; margin-left: 20px; padding-top: 10px;"> A.R.T.</a>
+	</nav>
+
+<div class="container-fluid" style= "padding-top:12vh" >
 	
-   <div class="alert alert-info" role="alert">
+   <!-- <div class="alert alert-info" role="alert" style="padding-top:12vh;">
       Refresh the page 3-4 times if you don't see the PDFs
-</div>
+</div> -->
+	<iframe src="https://drive.google.com/embeddedfolderview?id=13jVjm4sWdzsNtBYxxhL5XmmtwhKk07iI#grid" style="width:100%; height:600px; border:0;"></iframe>
+
 	
-	<div class="card-deck justify-content-around">
-		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-			<iframe type="application/pdf" src="https://drive.google.com/file/d/1ENkRpKDe0DNBiydgZVtrxgiTDCSVyOQd/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  10th science 04  </h4> 
-					 </div>
-	   
-		</div>
-		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-			<iframe type="application/pdf" src="https://drive.google.com/file/d/1HawSt5rs-ePARcw7WS70o3edJqVMDPAl/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  9th motion 08  </h4> 
-					 </div>
-	   
-		</div>
-	  <div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-		  <iframe type="application/pdf" src="https://drive.google.com/file/d/1ebID77plijmgw4APk223No7cmplMdE0u/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  9th science Ch-2(02) </h4> 
-					 </div>
-	   
-		</div>
-	</div>
-	<div class="card-deck justify-content-around">
-		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-			<iframe type="application/pdf" src="https://drive.google.com/file/d/1nMmla9NL9gBtTpfn7_j5nG-NR58lUBnO/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  12th Maths 01 </h4> 
-					 </div>
-	   
-		</div>
-		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-			<iframe type="application/pdf" src="https://drive.google.com/file/d/1o5hxUNc8I2MyWZDoARcF8srF2n-mrSYD/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  11th chem ch-2 </h4> 
-					 </div>
-	   
-		</div>
-		<div class="card m-5 bg-dark text-white border-primary" style="max-width: 21rem;">
-			
-			<iframe type="application/pdf" src="https://drive.google.com/file/d/1bpiuncwFP95g7s_C8ovKag1PoJ3gk62T/preview?usp=sharing" ></iframe>
-					 <div class="caption">
-						<h4>  maths 02  </h4> 
-					 </div>
-	   
-		</div>
-	   
-    
-	</div>
 </div>
 
 <%- include("./partials/footer") %>
